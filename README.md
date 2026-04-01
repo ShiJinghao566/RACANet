@@ -2,17 +2,20 @@
   <img src="figures/ICON.png" width="140">
 </p>
 
+
 <h2 align="center">RACANet: Aware Crowd Anchor Network for RGB-T Crowd Counting</h2>
 
 <p align="center">
   Implementation of RACANet for RGB-T crowd counting.
 </p>
 
+
 ## 🧭 Overview
 
 <div>
   <img src="figures/Figure1.png" width="96%" height="96%">
 </div>
+
 
 **Figure 1: The RACANet framework.**
 
@@ -21,6 +24,7 @@
 <div>
   <img src="figures/Figure2.png" width="96%" height="96%">
 </div>
+
 
 **Figure 2: Detailed architecture of the Local Anchor Fusion Module (LAFM).**
 
@@ -94,47 +98,48 @@ Drone-RGBT/
 
 **Table 1. Comparison of different methods on the RGBT-CC dataset.**
 
-| Method | Venue | Backbone | GAME0 | GAME1 | GAME2 | GAME3 | RMSE |
-|---|---|---|---:|---:|---:|---:|---:|
-| MMCCN | ACCV'20 | ResNet-50 | 13.82 | 17.83 | 22.20 | 29.64 | 24.36 |
-| BL+IADM | CVPR'21 | VGG-19 | 15.61 | 19.95 | 24.69 | 32.89 | 28.18 |
-| DEFNet | TITS'22 | VGG-16 | 11.90 | 16.08 | 20.19 | 27.27 | 21.09 |
-| CCANet | TMM'23 | VGG-16 | 13.93 | 18.13 | 22.08 | 28.26 | 24.71 |
-| CSA-Net | ESWA'23 | VGG-19 | 12.45 | 16.46 | 21.48 | 30.62 | 21.64 |
-| CGINet | EAAI'23 | ConvNext | 12.07 | 15.98 | 20.06 | 27.73 | 20.54 |
-| MC3Net | TITS'23 | ConvNext | 11.47 | 15.06 | 19.40 | 27.95 | 20.59 |
-| MCN | ESWA'24 | PoolFormer | 11.56 | 15.92 | 20.16 | 28.06 | 19.02 |
-| C4-MIM | CAIS'24 | VGG-19 | 11.27 | 15.02 | 19.31 | 25.33 | 20.31 |
-| CFAF-Net | EAAI'24 | VGG-19 | 11.07 | 14.96 | 19.65 | 29.05 | 18.83 |
-| CrowdAlign | IVC'24 | VGG-19 | 11.07 | 14.83 | 19.44 | 28.65 | 19.78 |
-| GETANet | GRSL'24 | PVT | 12.14 | 15.98 | 19.40 | 28.61 | 22.17 |
-| BGDFNet | TIM'24 | VGG-16 | 11.00 | 15.04 | 19.86 | 29.72 | 19.05 |
-| CSCA | PR'25 | VGG-19 | 13.50 | 18.63 | 23.59 | 31.59 | 24.83 |
-| MSPNet | TCE'25 | IR-50 | 12.20 | 16.50 | 20.51 | 27.84 | 21.49 |
-| MIANet | TITS'25 | VGG-19 | 11.97 | 15.65 | 19.93 | 27.54 | 22.17 |
-| MISF-Net | TMM'25 | VGG-16 | 10.90 | 14.87 | 19.65 | 29.18 | 19.42 |
-| **RACANet (Ours)** | - | **PVTv2** | **10.18** | **14.19** | **18.12** | **25.33** | **18.13** |
+|       Method       |  Venue  |  Backbone  |   GAME0   |   GAME1   |   GAME2   |   GAME3   |   RMSE    |
+| :----------------: | :-----: | :--------: | :-------: | :-------: | :-------: | :-------: | :-------: |
+|       MMCCN        | ACCV'20 | ResNet-50  |   13.82   |   17.83   |   22.20   |   29.64   |   24.36   |
+|      BL+IADM       | CVPR'21 |   VGG-19   |   15.61   |   19.95   |   24.69   |   32.89   |   28.18   |
+|       DEFNet       | TITS'22 |   VGG-16   |   11.90   |   16.08   |   20.19   |   27.27   |   21.09   |
+|       CCANet       | TMM'23  |   VGG-16   |   13.93   |   18.13   |   22.08   |   28.26   |   24.71   |
+|      CSA-Net       | ESWA'23 |   VGG-19   |   12.45   |   16.46   |   21.48   |   30.62   |   21.64   |
+|       CGINet       | EAAI'23 |  ConvNext  |   12.07   |   15.98   |   20.06   |   27.73   |   20.54   |
+|       MC3Net       | TITS'23 |  ConvNext  |   11.47   |   15.06   |   19.40   |   27.95   |   20.59   |
+|        MCN         | ESWA'24 | PoolFormer |   11.56   |   15.92   |   20.16   |   28.06   |   19.02   |
+|       C4-MIM       | CAIS'24 |   VGG-19   |   11.27   |   15.02   |   19.31   |   25.33   |   20.31   |
+|      CFAF-Net      | EAAI'24 |   VGG-19   |   11.07   |   14.96   |   19.65   |   29.05   |   18.83   |
+|     CrowdAlign     | IVC'24  |   VGG-19   |   11.07   |   14.83   |   19.44   |   28.65   |   19.78   |
+|      GETANet       | GRSL'24 |    PVT     |   12.14   |   15.98   |   19.40   |   28.61   |   22.17   |
+|      BGDFNet       | TIM'24  |   VGG-16   |   11.00   |   15.04   |   19.86   |   29.72   |   19.05   |
+|        CSCA        |  PR'25  |   VGG-19   |   13.50   |   18.63   |   23.59   |   31.59   |   24.83   |
+|       MSPNet       | TCE'25  |   IR-50    |   12.20   |   16.50   |   20.51   |   27.84   |   21.49   |
+|       MIANet       | TITS'25 |   VGG-19   |   11.97   |   15.65   |   19.93   |   27.54   |   22.17   |
+|      MISF-Net      | TMM'25  |   VGG-16   |   10.90   |   14.87   |   19.65   |   29.18   |   19.42   |
+| **RACANet (Ours)** |    -    | **PVTv2**  | **10.18** | **14.19** | **18.12** | **25.33** | **18.13** |
 
 **Table 2. Comparison of different methods on the DroneRGBT dataset.**
 
-| Method | Venue | Backbone | GAME0 | GAME1 | GAME2 | GAME3 | RMSE |
-|---|---|---|---:|---:|---:|---:|---:|
-| MMCCN | ACCV'20 | ResNet-50 | 7.27 | - | - | - | 11.45 |
-| BL+IADM | CVPR'21 | VGG-19 | 9.70 | 12.04 | 15.31 | 20.31 | 15.01 |
-| DEFNet | TITS'22 | VGG-16 | 7.89 | 9.60 | 11.96 | 15.34 | 12.88 |
-| CGINet | EAAI'23 | ConvNext | 8.37 | 9.97 | 12.34 | 15.51 | 13.45 |
-| MC3Net | TITS'23 | ConvNext | 7.33 | - | - | - | 11.17 |
-| CrowdAlign | IVC'24 | VGG-19 | 7.03 | - | - | - | 10.96 |
-| GETANet | GRSL'24 | PVT | 8.44 | 10.01 | 12.75 | 15.83 | 13.99 |
-| BMCC | ECCV'24 | VGG-19 & ViT | 6.20 | - | - | - | 10.40 |
-| CSCA | PR'25 | VGG-19 | 9.51 | 12.12 | 15.84 | 21.57 | 15.19 |
-| MIANet | TITS'25 | VGG-19 | 6.74 | 8.64 | 11.49 | 16.31 | 10.58 |
-| CMFX | NN'25 | VGG-19 | 6.75 | 8.88 | 11.87 | 14.69 | 11.05 |
-| **RACANet (Ours)** | - | **PVTv2** | **5.23** | **6.69** | **8.78** | **12.08** | **8.18** |
+|       Method       |  Venue  |   Backbone   |  GAME0   |  GAME1   |  GAME2   |   GAME3   |   RMSE   |
+| :----------------: | :-----: | :----------: | :------: | :------: | :------: | :-------: | :------: |
+|       MMCCN        | ACCV'20 |  ResNet-50   |   7.27   |    -     |    -     |     -     |  11.45   |
+|      BL+IADM       | CVPR'21 |    VGG-19    |   9.70   |  12.04   |  15.31   |   20.31   |  15.01   |
+|       DEFNet       | TITS'22 |    VGG-16    |   7.89   |   9.60   |  11.96   |   15.34   |  12.88   |
+|       CGINet       | EAAI'23 |   ConvNext   |   8.37   |   9.97   |  12.34   |   15.51   |  13.45   |
+|       MC3Net       | TITS'23 |   ConvNext   |   7.33   |    -     |    -     |     -     |  11.17   |
+|     CrowdAlign     | IVC'24  |    VGG-19    |   7.03   |    -     |    -     |     -     |  10.96   |
+|      GETANet       | GRSL'24 |     PVT      |   8.44   |  10.01   |  12.75   |   15.83   |  13.99   |
+|        BMCC        | ECCV'24 | VGG-19 & ViT |   6.20   |    -     |    -     |     -     |  10.40   |
+|        CSCA        |  PR'25  |    VGG-19    |   9.51   |  12.12   |  15.84   |   21.57   |  15.19   |
+|       MIANet       | TITS'25 |    VGG-19    |   6.74   |   8.64   |  11.49   |   16.31   |  10.58   |
+|        CMFX        |  NN'25  |    VGG-19    |   6.75   |   8.88   |  11.87   |   14.69   |  11.05   |
+| **RACANet (Ours)** |    -    |  **PVTv2**   | **5.23** | **6.69** | **8.78** | **12.08** | **8.18** |
 
 <div>
   <img src="figures/Figure3.png" width="96%" height="96%">
 </div>
+
 
 **Figure 3: Visualization results of the proposed RACANet under various complex scenarios. From left to right: (a) RGB image and the ground-truth count; (b) thermal infrared image; (c) joint crowd-aware prior $P^l$; (d) reliability map of the RGB modality, $R_r$, where highlighted regions indicate higher confidence of this modality at the corresponding local positions; (e) reliability map of the thermal modality, $R_t$; (f) output features of the LAFM; (g) predicted density map and the estimated crowd count. The visualization results show that RACANet can adaptively assess modality reliability and accurately estimate crowd density under conditions of insufficient illumination or thermal noise interference.**
 
