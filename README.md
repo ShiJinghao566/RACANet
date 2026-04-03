@@ -210,7 +210,7 @@ python train.py \
 
 #### 5. Testing
 
-We provide trained RACANet checkpoints on both datasets in Google Drive (placeholder link): [RACANet pretrained checkpoints](https://drive.google.com/drive/folders/1j2AD9_JXRgpimlFjCQXOJlHQRp37_Tje?usp=drive_link).
+
 
 You can evaluate using your own trained checkpoints, or directly run inference with our provided checkpoints.
 
