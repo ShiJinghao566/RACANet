@@ -5,11 +5,6 @@
 
 <h2 align="center">RACANet: Aware Crowd Anchor Network for RGB-T Crowd Counting</h2>
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2604.24543">
-    <img src="https://img.shields.io/badge/arXiv-2512.20255-b31b1b.svg" alt="arXiv">
-  </a>
-</p>
 
 <p align="center">
   Implementation of RACANet for RGB-T crowd counting.
